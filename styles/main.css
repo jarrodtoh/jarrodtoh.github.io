@@ -1,0 +1,183 @@
+/************************************************
+*   Header         							    *
+************************************************/
+
+#main-header {
+    background-image: url('../images/background.jpg');
+    min-height: 420px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-title {
+    display: block;
+    width: 100%;
+    padding: 48px 0px;
+}
+
+/************************************************
+*   Header Navigation						    *
+************************************************/
+
+.navbar-custom {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.nav {
+  margin-bottom: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav > li > a {
+  display: block;
+  background-color: #ffffff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+/************************************************
+*   Profile Image   						    *
+************************************************/
+
+#main-header .profile-img {
+    background: #F4F4F4;
+    max-height: 240px;
+    max-width: 240px;
+    margin: 48px auto -160px;
+    padding: 12px;
+    overflow: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+/************************************************
+*   Social Media   							    *
+************************************************/
+
+#social-nav {
+    margin-left: 39%;
+    margin-right: 39%;
+    text-align: center;
+}
+
+ul#social-networking {
+    margin: 0px 0 0 0;
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    font-size: 12px;
+
+}
+
+#social-networking li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: url('../images/clean-social-icons.jpg') no-repeat;
+}
+
+#social-networking li, #social-networking a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+ul#social-networking li.facebook {
+    background-position: -3px -10px;
+}
+
+ul#social-networking li.twitter {
+    background-position: -134px -74px;
+}
+
+ul#social-networking li.linkedin {
+    background-position: -387px -12px;
+}
+
+ul#social-networking li.email {
+    background-position: -453px -137px;
+}
+
+ul#social-networking li.github {
+    background-position: -5px -135px;
+}
+
+ul#social-networking li:hover {
+    opacity: 0.6;
+}
+
+/************************************************
+*   About Section  							    *
+************************************************/
+
+#main-body {
+    background: #f4f4f4;
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+#main-about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/************************************************
+*   Footer Section 							    *
+************************************************/
+
+#footer-wrap {
+    margin-top: 48px;
+    background: #563d7c;
+    min-height: 320px;
+}
+
+#footer-container {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#footer-container h3 {
+    color: #ffffff;
+}
+
+#footer-container a {
+    color: #ffffff;
+}
+
+#footer-container hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

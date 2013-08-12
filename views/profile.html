@@ -8,8 +8,8 @@
             </div>
             <div class="navbar navbar-custom">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#/profile/">Profile</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="/profile/">Profile</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Blog <span class="caret"></span>
@@ -32,28 +32,60 @@
         </div>
     </div>
     <div id="main-body">
-        <div id="social-nav">
-            <ul id="social-networking">
-                <li class="facebook"><a href="http://www.facebook.com/jarrod.jh" target="_blank"></a></li>
-                <li class="twitter"><a href="https://twitter.com/JarrodToh" target="_blank"></a></li>
-                <li class="linkedin"><a href="http://sg.linkedin.com/pub/jarrod-toh/35/8b0/205/" target="_blank"></a>
-                </li>
-                <li class="github"><a href="https://github.com/jarrodtoh" target="_blank"></a></li>
-                <li class="email"><a href="mailto:jarrod.toh@gmail.com"></a></li>
-            </ul>
+        <div class="container">
+            <div class="accordion" id="profile-details">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            <h3>Profile Introduction</h3>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <p><b>Jarrod</b> Toh</p>
+                            <p>Located in Singapore, a small country in South East Asia.</p>
+                            <p>Started coding since 16, and enjoys working on latest web technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <h3>Technology Stack</h3>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Under construction.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            <h3>Experiences</h3>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Under construction.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                            <h3>Education</h3>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Under construction.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="main-about" class="container">
-        <h2>About Jarrod Toh</h2>
-        <hr>
-        <p><b>Jarrod</b> is a web technologist from Singapore. He graduated with a Bachelor (Honours) in Computer
-            Science from Nanyang Technological University in 2013. Having been introduced to web development in 2006, he
-            has since become a web enthusiast.</p>
-
-        <p>He is competent in both front-end and back-end development, particularly Django Framework and AngularJS
-            Frontend Framework.</p>
-
-        <p>For more information, please view his <a href="http://www.jarrodtoh.com/profile">Profile</a>.</p>
     </div>
     <div id="footer-wrap">
         <div class="container">

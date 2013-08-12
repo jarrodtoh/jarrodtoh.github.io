@@ -1,0 +1,12 @@
+#special-header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    text-align: left;
+}
+
+#special-header h3{
+    color: #ffffff;
+    margin-left: 5%;
+}

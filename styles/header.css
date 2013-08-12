@@ -1,0 +1,10 @@
+#power-header {
+    background-image: url('../images/background.jpg');
+    min-height: 220px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}

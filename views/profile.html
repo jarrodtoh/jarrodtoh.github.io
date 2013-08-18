@@ -51,12 +51,14 @@
                 <div class="accordion-group">
                     <div class="accordion-heading">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                            <h3>Technology Stack</h3>
+                            <h3>Technology Skills</h3>
                         </a>
                     </div>
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Under construction.
+                            <div ng-repeat="tech in technologies" style="float:left">
+                                <a href="#" data-toggle="tooltip" title="{{tech.title}}"><img src="{{tech.image_path}}" alt="{{tech.title}}"></a> &nbsp;
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,22 +70,57 @@
                     </div>
                     <div id="collapseThree" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Under construction.
+                            <table class="table">
+                                <thead>
+                                    <th>Job Title</th>
+                                    <th>Company</th>
+                                    <th>Scope</th>
+                                    <th>From</th>
+                                    <th>Until</th>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="experience in experiences">
+                                        <td width="25%">{{experience.title}} <span class="label label-info" ng-show="isDateCurrent(experience.end_date);">Current</span></td>
+                                        <td width="15%"><a href="{{experience.company_web}}" data-toggle="tooltip" title="{{experience.company}}"><img src="{{experience.company_logo}}" alt="{{experience.company}}"></a></td>
+                                        <td width="40%">{{experience.scope}}</td>
+                                        <td width="10%">{{experience.start_date}}</td>
+                                        <td width="10%">{{experience.end_date}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-group">
                     <div class="accordion-heading">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                            <h3>Education</h3>
+                            <h3>Educations</h3>
                         </a>
                     </div>
                     <div id="collapseFour" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Under construction.
+                            <table class="table">
+                                <thead>
+                                    <th>Campus</th>
+                                    <th>Cert Achieved</th>
+                                    <th>From</th>
+                                    <th>Until</th>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="education in educations">
+                                        <td>{{education.campus}} <span class="label label-info" ng-show="isDateCurrent(education.end_date);">Current</span></td>
+                                        <td>{{education.cert_type}}</td>
+                                        <td>{{education.start_date}}</td>
+                                        <td>{{education.end_date}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <a href="#" class="btn btn-large btn-primary"><i class="icon-white icon-download-alt"></i> Download My CV</a>
             </div>
         </div>
     </div>

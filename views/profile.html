@@ -6,165 +6,101 @@
 
                 <h4 style="color:#ffffff">Web Technologist | Data Geek | Photography Enthusiast</h4>
             </div>
-            <div class="navbar navbar-custom">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="/profile/">Profile</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Blog <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Latest</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Misc</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#/contact">Contact</a></li>
-                    <li><a href="#">Site</a></li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-default navbar-custom" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#/profile/">Profile</a></li>
+                        <li><a href="http://blog.jarrodtoh.com">Blog</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                        <li><a href="#">Site</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         <div class="row">
             <div class="profile-img">
-                <img src="../images/1c56af6a.profile.jpg" class="img-circle" style="width:240px">
+                <img src="../images/1c56af6a.profile.jpg" class="img-responsive img-circle" style="width:240px">
             </div>
         </div>
     </div>
     <div id="main-body" ng-controller="ProfileCtrl">
         <div class="container">
-            <div class="accordion" id="profile-details">
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                            <h3>Profile Introduction</h3>
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                            <p><b>Jarrod</b> Toh</p>
-                            <p>Located in Singapore, a small country in South East Asia.</p>
-                            <p>Started coding since 16, and enjoys working on latest web technology.</p>
-                        </div>
-                    </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h4>Profile Introduction</h4></div>
+                <div class="panel-body">
+                    <p><b>Jarrod</b> Toh</p>
+                    <p>Located in Singapore, a small country in South East Asia.</p>
+                    <p>Started coding since 16, and enjoys working on latest web technology.</p>
                 </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                            <h3>Technology Skills</h3>
-                        </a>
-                    </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            <div ng-repeat="tech in technologies" style="float:left">
-                                <a href="#" data-toggle="tooltip" title="{{tech.title}}"><img src="{{tech.image_path}}" alt="{{tech.title}}"></a> &nbsp;
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                            <h3>Experiences</h3>
-                        </a>
-                    </div>
-                    <div id="collapseThree" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            <table class="table">
-                                <thead>
-                                    <th>Job Title</th>
-                                    <th>Company</th>
-                                    <th>Scope</th>
-                                    <th>From</th>
-                                    <th>Until</th>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="experience in experiences">
-                                        <td width="25%">{{experience.title}} <span class="label label-info" ng-show="isDateCurrent(experience.end_date);">Current</span></td>
-                                        <td width="15%"><a href="{{experience.company_web}}" data-toggle="tooltip" title="{{experience.company}}"><img src="{{experience.company_logo}}" alt="{{experience.company}}"></a></td>
-                                        <td width="40%">{{experience.scope}}</td>
-                                        <td width="10%">{{experience.start_date}}</td>
-                                        <td width="10%">{{experience.end_date}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                            <h3>Educations</h3>
-                        </a>
-                    </div>
-                    <div id="collapseFour" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            <table class="table">
-                                <thead>
-                                    <th>Campus</th>
-                                    <th>Cert Achieved</th>
-                                    <th>From</th>
-                                    <th>Until</th>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="education in educations">
-                                        <td>{{education.campus}} <span class="label label-info" ng-show="isDateCurrent(education.end_date);">Current</span></td>
-                                        <td>{{education.cert_type}}</td>
-                                        <td>{{education.start_date}}</td>
-                                        <td>{{education.end_date}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading"><h4>Technology Skills</h4></div>
+                <div class="panel-body">
+                    <div ng-repeat="tech in technologies" style="float:left">
+                        <a href="#" data-toggle="tooltip" title="{{tech.title}}"><img class="img-responsive" src="{{tech.image_path}}" alt="{{tech.title}}"></a> &nbsp;
                     </div>
                 </div>
             </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading"><h4>Experiences</h4></div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <th style="text-align: center">Job Title</th>
+                            <th style="text-align: center">Company</th>
+                            <th style="text-align: center">Scope</th>
+                            <th style="text-align: center">From</th>
+                            <th style="text-align: center">Until</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="experience in experiences">
+                                <td width="25%">{{experience.title}} <span class="label label-info" ng-show="isDateCurrent(experience.end_date);">Current</span></td>
+                                <td width="15%"><a href="{{experience.company_web}}" data-toggle="tooltip" title="{{experience.company}}"><img src="{{experience.company_logo}}" alt="{{experience.company}}"></a></td>
+                                <td width="40%">{{experience.scope}}</td>
+                                <td width="10%">{{experience.start_date}}</td>
+                                <td width="10%">{{experience.end_date}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading"><h4>Educations</h4></div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <th style="text-align: center">Campus</th>
+                            <th style="text-align: center">Cert Achieved</th>
+                            <th style="text-align: center">From</th>
+                            <th style="text-align: center">Until</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="education in educations">
+                                <td>{{education.campus}} <span class="label label-info" ng-show="isDateCurrent(education.end_date);">Current</span></td>
+                                <td>{{education.cert_type}}</td>
+                                <td>{{education.start_date}}</td>
+                                <td>{{education.end_date}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="row">
-                <a href="#" class="btn btn-large btn-primary"><i class="icon-white icon-download-alt"></i> Download My CV</a>
+                <a href="../docs/JarrodToh_Resume.pdf" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Download My CV</a>
             </div>
         </div>
     </div>
     <div id="footer-wrap">
-        <div class="container">
-            <div id="footer-container" class="row-fluid">
-                <div class="span12">
-                    <div class="span4" style="width: 30%">
-                        <h3>Featured</h3>
-                        <hr>
-                        <ul class="unstyled">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact & support</a></li>
-                            <li><a href="#">Enterprise</a></li>
-                            <li><a href="#">Site status</a></li>
-                        </ul>
-                    </div>
-                    <div class="span4" style="width: 30%">
-                        <h3>Archives</h3>
-                        <hr>
-                        <ul class="unstyled">
-                            <li><a href="#">January 2013</a></li>
-                            <li><a href="#">February 2013</a></li>
-                            <li><a href="#">March 2013</a></li>
-                            <li><a href="#">April 2013</a></li>
-                        </ul>
-                    </div>
-                    <div class="span4" style="width: 30%">
-                        <h3>Links</h3>
-                        <hr>
-                        <ul class="unstyled">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <p class="muted text-center" style="color:#ffffff">© 2013 Jarrod Labs. All rights reserved</p>
-                </div>
-            </div>
-        </div>
+        <p class="muted text-center" style="padding-top: 20px">© 2013 Jarrod Labs. All rights reserved</p>
     </div>
 </div>
